@@ -1,0 +1,12 @@
+flask
+flask-cors
+flask-sqlalchemy
+metaapi-cloud-sdk
+pandas
+numpy
+joblib
+python-dotenv
+dnspython
+requests
+aiohttp
+websocket-client

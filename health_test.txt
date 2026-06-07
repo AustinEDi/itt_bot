@@ -1,0 +1,8 @@
+cd ~/itt_bot
+python3 -c "
+import os; from dotenv import load_dotenv; load_dotenv(dotenv_path='.env')
+from mt5.mt5_client import MT5Client; import config
+client = MT5Client(config.METAAPI_TOKEN, os.getenv('METAAPI_ACCOUNT_ID'))
+client.start()
+print('Balance:', client.get_account_info()['balance'])
+"
